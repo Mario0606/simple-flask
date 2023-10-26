@@ -6,8 +6,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
+@app.route('/second')
+def home():
+    return render_template('second_page.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
