@@ -9,7 +9,7 @@ def home():
     return render_template('home.html')
 
 @app.route('/second')
-def home():
+def second():
     return render_template('second_page.html')
 
 if __name__ == "__main__":
